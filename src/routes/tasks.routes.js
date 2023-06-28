@@ -7,7 +7,7 @@ const router = Router();
 router.get("/", authRequired, getAllTasks)
 router.get("/:id", authRequired, getOneTask)
 router.post("/", authRequired, createTask)
-router.delete("/", authRequired, deleteOneTask)
-router.put("/", authRequired, editTask)
+router.delete("/:id", authRequired, deleteOneTask)
+router.put("/:id", authRequired, editTask)
 
 export default router;

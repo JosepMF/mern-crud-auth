@@ -14,6 +14,6 @@ app.use(cookieParser());
 
 // routers
 app.use("/api", authRouter)
-app.use("/tasks", tasksRouter)
+app.use("/api/tasks", tasksRouter)
 
 export default app;
